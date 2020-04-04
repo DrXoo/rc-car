@@ -52,3 +52,9 @@ void Controller::Move(MovementDirection direction)
         digitalWrite(_pinEnable, HIGH);
     }
 }
+
+String Controller::PrintState()
+{
+    return "MotorA - " + _motorA.PrintState() + "\n" +
+           "MotorB - " + _motorB.PrintState();
+}

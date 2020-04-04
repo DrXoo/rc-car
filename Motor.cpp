@@ -54,6 +54,12 @@ Direction Motor::GetDirection()
     return _currentDirection;
 }
 
+String Motor::PrintState()
+{
+    return "Direction: " + (String)_currentDirection + "  -  " + 
+           "Speed:" + _currentSpeed;
+}
+
 void Motor::_NextSpeedValue(int direction)
 {
     if (millis() - _currentStepTime >= TIME_BETWEEN_STEPS)

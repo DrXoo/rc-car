@@ -21,6 +21,7 @@ class Motor
         void Enable();
         void Update();
         void Disable();
+        String PrintState();
     private:
         void _SetupMotorsMovement();
         void _NextSpeedValue(int direction);

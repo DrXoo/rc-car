@@ -17,6 +17,7 @@ class Controller
         Controller(const Motor& motorA, const Motor& motorB, int pinEnable);
         void Update();
         void Move(MovementDirection direction);
+        String PrintState();
     private:
         MovementDirection _currentMovementDirection;
         int _pinEnable;
